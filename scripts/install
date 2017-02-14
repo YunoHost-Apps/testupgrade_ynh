@@ -41,7 +41,7 @@ sed -i "s@YNH_DOCUMENT_ROOT@$document_root/@g" ../sources/index.html
 sudo cp -a ../sources/index.html $document_root
 
 # Append content to index.html file, for testing purpose
-sudo echo "Installed on: "$(date) >> $document_root/index.html
+sudo echo "Installed on: $(date)" >> $document_root/index.html
 
 # Set permissions
 sudo chmod 775 -R $document_root

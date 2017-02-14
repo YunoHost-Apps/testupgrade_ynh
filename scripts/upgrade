@@ -38,12 +38,12 @@ location=${path:-/}
 document_root=/var/www/$app
 sudo mkdir -p $document_root
 
+# Append content to index.html file, for testing purpose
+sudo echo "Updated on: $(date)" >> $document_root/index.html
+
 # Set permissions
 sudo chmod 775 -R $document_root
 sudo chown -hR www-data:www-data $document_root
-
-# Append content to index.html file, for testing purpose
-sudo echo "Updated on: "$(date) >> $document_root/index.html
 
 # Nginx configuration
 sed -i "s@YNH_LOCATION@$location@g" ../conf/nginx.conf
