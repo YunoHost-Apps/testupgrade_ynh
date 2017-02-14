@@ -37,8 +37,8 @@
                 "ask": {
                     "en": "Choose a path for TestUpgrade"
                 },
-                "example": "/hextris",
-                "default": "/hextris"
+                "example": "/testupgrade",
+                "default": "/testupgrade"
             }
         ]
     }
