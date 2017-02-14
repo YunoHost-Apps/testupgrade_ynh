@@ -47,7 +47,7 @@
                     "fr": "Est-ce un site public ?"
                 },
                 "type": "boolean",
-                "default": true,
+                "default": true
             }
         ]
     }
