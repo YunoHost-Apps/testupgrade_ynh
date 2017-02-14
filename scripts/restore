@@ -52,7 +52,7 @@ NGINX_CONF="/etc/nginx/conf.d/${domain}.d/${app}.conf"
 sudo cp -a ./www "$DESTDIR"
 
 # Append content to index.html file, for testing purpose
-sudo echo "Restored on: $(date)" >> $DESTDIR/index.html
+echo "Restored on: $(date)" | sudo tee --append "$DESTDIR/index.html"
 
 # Restore configuration files
 sudo cp -a ./conf/nginx.conf "$NGINX_CONF"

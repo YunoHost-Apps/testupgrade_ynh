@@ -39,7 +39,7 @@ document_root=/var/www/$app
 sudo mkdir -p $document_root
 
 # Append content to index.html file, for testing purpose
-sudo echo "Updated on: $(date)" >> $document_root/index.html
+echo "Updated on: $(date)" | sudo tee --append "$document_root/index.html"
 
 # Set permissions
 sudo chmod 775 -R $document_root
