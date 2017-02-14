@@ -24,7 +24,7 @@ path=$(ynh_app_setting_get "$app" path)
 is_public=$(ynh_app_setting_get "$app" is_public)
 
 # Append content to index.html file, for testing purpose
-echo "Backuped on: "$(date) >> /var/www/$app/index.html
+sudo echo "Backuped on: "$(date) >> /var/www/$app/index.html
 
 # Copy the app source files
 ynh_backup "/var/www/$app" "www"
