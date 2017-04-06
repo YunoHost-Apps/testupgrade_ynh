@@ -37,6 +37,9 @@
                 "ask": {
                     "en": "Choose a path for TestUpgrade"
                 },
+                "help": {
+                    "en": "This will be the URL path of your application, not your file system path"
+                },
                 "example": "/testupgrade",
                 "default": "/testupgrade"
             },
