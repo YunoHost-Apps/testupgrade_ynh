@@ -44,6 +44,14 @@
                 "default": "/testupgrade"
             },
             {
+                "name": "test_translation_generation",
+                "type": "boolean",
+                "ask": {
+                    "en": "Some random string to see if this is included in en.json"
+                },
+                "example": "stuff"
+            },
+            {
                 "name": "is_public",
                 "ask": {
                     "en": "Is it a public site ?",
