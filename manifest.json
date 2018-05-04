@@ -47,7 +47,7 @@
                 "name": "test_translation_generation",
                 "type": "boolean",
                 "ask": {
-                    "en": "Some random string to see if this is included in en.json"
+                    "en": "Some random string to see if this is included in en.json foobar"
                 },
                 "example": "stuff"
             },
